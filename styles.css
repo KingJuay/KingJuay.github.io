@@ -3,8 +3,6 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    
-    
 }
 
 header {
@@ -14,11 +12,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* เพิ่ม flex-wrap เพื่อให้ยืดหยุ่นกับหน้าจอเล็ก */
+}
+
+header .logo {
+    font-size: 1.5rem; /* ปรับขนาดฟอนต์ของโลโก้เพื่อรองรับทุกหน้าจอ */
 }
 
 header nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* เพิ่ม flex-wrap เพื่อให้รายการจัดเรียงได้ดีในหน้าจอเล็ก */
 }
 
 header nav ul li {
@@ -41,26 +47,21 @@ section {
 }
 
 .main-content {
-    margin-left: 10%; /* เลื่อนเนื้อหาทั้งหมดมาด้านขวา 10% */
-    width: 90%; /* ลดความกว้างเพื่อไม่ให้เนื้อหาเกินหน้าจอ */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px; /* กำหนดขนาดสูงสุดให้กับเนื้อหาเพื่อไม่ให้กว้างเกินไป */
+    width: 90%; /* ปรับให้เข้ากับหน้าจอเล็กได้ดีขึ้น */
 }
 
 .portfolio-item {
     margin: 20px 0;
+    text-align: center; /* ปรับตำแหน่งให้ภาพอยู่กลาง */
 }
 
 .portfolio-item img {
     max-width: 100%;
     height: auto;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างรูปภาพกับข้อความ */
 }
 
 footer {
@@ -72,19 +73,21 @@ footer {
     bottom: 0;
     width: 100%;
 }
-#port{
-    font-size: 300%;
-    
+
+#port {
+    font-size: 3rem;
+    padding: 20px;
 }
 
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     header nav ul {
         flex-direction: column;
+        align-items: center;
         width: 100%;
         padding: 0;
     }
@@ -107,7 +110,7 @@ footer {
     }
 
     #port {
-        font-size: 200%; /* ลดขนาดตัวอักษรในมือถือ */
+        font-size: 2rem; /* ลดขนาดฟอนต์ในมือถือ */
     }
 }
 
@@ -124,7 +127,7 @@ footer {
 
 @media (min-width: 1200px) {
     #port {
-        font-size: 400%; /* ขยายขนาดฟอนต์สำหรับหน้าจอใหญ่ */
+        font-size: 4rem; /* ขยายขนาดฟอนต์สำหรับหน้าจอใหญ่ */
     }
 
     .portfolio-item img {
@@ -132,26 +135,24 @@ footer {
     }
 }
 
-#roundsquare{
+#roundsquare,
+#roundsquare2,
+#roundsquare3 {
     border-radius: 25px;
-            padding: 15px;
-            width: 12%;
-            height: auto;
-            background: #f4f4f4;
+    padding: 15px;
+    background: #f4f4f4;
+    display: inline-block; /* ทำให้กล่องปรับขนาดตามเนื้อหา */
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างกล่อง */
 }
 
-#roundsquare2{
-    border-radius: 25px;
-            padding: 15px;
-            width: 14.5%;
-            height: auto;
-            background: #f4f4f4;
+#roundsquare {
+    width: auto;
 }
 
-#roundsquare3{
-    border-radius: 25px;
-            padding: 15px;
-            width: 18%;
-            height: auto;
-            background: #f4f4f4;
+#roundsquare2 {
+    width: auto;
+}
+
+#roundsquare3 {
+    width: auto;
 }
