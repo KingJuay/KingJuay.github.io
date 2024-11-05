@@ -264,6 +264,11 @@ display: flex;
     display: inline-block;
 }
 
+.image {
+    width:100%;
+    height: auto;
+}
+
 /* กำหนดกล่องข้อความและเนื้อหาของกิจกรรมและเกียรติบัตรเมื่อนำเมาส์ไปชี้*/
 .overlay {
     position: absolute;
@@ -308,67 +313,59 @@ footer {
     width: 100%; 
 }
 
-/* สำหรับหน้าจอขนาดกลาง (แท็บเล็ต) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    header .logo {
-        font-size: 1.3rem;
+@media (max-width: 768px)  
+{
+    header {
+        flex-direction: column; 
+        align-items: center; 
     }
 
     header nav ul {
-        flex-direction: row;
-        font-size: 0.9rem;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%; 
+        padding: 0; 
     }
 
-    .main-content {
-        width: 90%;
+    header nav ul li { 
+        margin: 10px 0; 
     }
 
-    #square {
-        width: 30%;
+    .banner {
+        padding: 30px 10px; 
     }
 
-    #square2 {
-        width: 70%;
+    .portfolio-item img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    section {
+        padding: 10px; 
+    }
+
+    #port {
+        font-size: 2rem; 
     }
 }
 
-/* สำหรับหน้าจอขนาดเล็ก (โทรศัพท์มือถือ) */
-@media (max-width: 767px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-    }
-
-    header .logo {
-        font-size: 1.2rem;
+@media (max-width: 1024px) {
+    .portfolio-item img {
+        max-width: 80%; 
     }
 
     header nav ul {
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row; 
+        justify-content: space-around; 
+    }
+}
+
+@media (min-width: 1200px) {
+    #port {
+        font-size: 4rem; 
     }
 
-    header nav ul li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .main-content {
-        width: 100%;
-    }
-
-    #square {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    #square2 {
-        width: 100%;
-    }
-
-    .portfolio-item2 img {
-        max-width: 150px;
-        margin-left: 0;
+    .portfolio-item img {
+        max-width: 50%; 
     }
 }
