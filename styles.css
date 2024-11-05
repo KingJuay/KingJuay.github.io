@@ -308,29 +308,6 @@ footer {
     width: 100%; 
 }
 
-/* สำหรับหน้าจอขนาดใหญ่ (คอมพิวเตอร์) */
-@media (min-width: 1024px) {
-    header .logo {
-        font-size: 1.5rem;
-    }
-
-    header nav ul {
-        flex-direction: row;
-    }
-
-    .main-content {
-        width: 80%;
-    }
-
-    #square {
-        width: 25%;
-    }
-
-    #square2 {
-        width: 75%;
-    }
-}
-
 /* สำหรับหน้าจอขนาดกลาง (แท็บเล็ต) */
 @media (min-width: 768px) and (max-width: 1023px) {
     header .logo {
