@@ -1,30 +1,36 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.6;  
 }
 
+
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background: #333; 
+    color: #fff; 
+    padding: 10px 20px; 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* เพิ่ม flex-wrap เพื่อให้ยืดหยุ่นกับหน้าจอเล็ก */
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
 }
 
 header .logo {
-    font-size: 1.5rem; /* ปรับขนาดฟอนต์ของโลโก้เพื่อรองรับทุกหน้าจอ */
+    font-size: 1.5rem; 
 }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap; /* เพิ่ม flex-wrap เพื่อให้รายการจัดเรียงได้ดีในหน้าจอเล็ก */
+header nav ul { 
+    list-style: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+    flex-wrap: wrap; 
 }
 
 header nav ul li {
@@ -32,127 +38,360 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #fff; 
+    text-decoration: none; 
+}
+
+/* กำหนดสีฟอนต์ก่อนและหลังเอาเมาส์ไปชี้ */
+a {
+    color: #fff; 
     text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: #1c87c9; 
+}
+
+section {
+    padding: 20px; 
 }
 
 .banner {
     background: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
+    padding: 10px 20px; 
+    text-align: center; 
 }
 
-section {
-    padding: 20px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+.fade-in-text {
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-out forwards; 
+}
+
+#port { 
+    font-size: 3rem; 
+    padding: 20px;  
+}
+
+/* กำหนดระยะและขนาดเนื้อหา */
 .main-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1200px; /* กำหนดขนาดสูงสุดให้กับเนื้อหาเพื่อไม่ให้กว้างเกินไป */
-    width: 90%; /* ปรับให้เข้ากับหน้าจอเล็กได้ดีขึ้น */
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 1200px; 
+    width: 90%;
 }
 
-.portfolio-item {
-    margin: 20px 0;
-    text-align: center; /* ปรับตำแหน่งให้ภาพอยู่กลาง */
+/* กรอบข้อความหัวข้อ */
+#roundsquare,
+#roundsquare2,
+#roundsquare3 {
+    color: white;
+    border-radius: 25px; 
+    padding: 15px; 
+    background: #333; 
+    display: inline-block; 
+    margin-bottom: 20px;
+    
 }
 
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างรูปภาพกับข้อความ */
+#roundsquare {
+    width: auto; 
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
+#roundsquare2 {
+    width: auto; 
+}
+
+#roundsquare3 {
+    width: auto; 
+}
+
+/* จัดรูปแบบเรียงรูปและไอคอนให้อยู่ถัดจากด้านข้าง */
+.container{
+display: flex;
+}
+
+/* กรอบข้อความเนื้อหาของ Profile */
+#square{
+    border-radius: 25px;
+    padding: 20px 20px 20px 20px ; 
+    background: #f4f4f4; 
+    width: 20%;
+}
+
+/* กรอบตรงเนื้อหากิจกรรมและผลงาน */
+#square2{  
+    border-style: solid;
+    border-width: medium;
+    border-radius: 25px;
+    padding: 40px 20px 20px 20px ; 
+    background: #f4f4f4; 
+    display: inline-block; 
     width: 100%;
 }
 
-#port {
-    font-size: 3rem;
-    padding: 20px;
+/* กำหนดขนาดรูปของกิจกรรมและเกียรติบัตร */
+.portfolio-item img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    .banner {
-        padding: 30px 10px;
-    }
-
-    .portfolio-item img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    #port {
-        font-size: 2rem; /* ลดขนาดฟอนต์ในมือถือ */
-    }
+/* กำหนดขนาดรูปตัวเองและรูปไอคอน */
+.portfolio-item2 img  {
+    clip-path: circle(50% at 50% 50%);
+    max-width: 250px; 
+    height: auto; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
-@media (max-width: 1024px) {
-    .portfolio-item img {
-        max-width: 80%; /* ให้ภาพใหญ่ขึ้น แต่ไม่กินพื้นที่ทั้งหมด */
+
+
+/* กำหนดการจัดเรียงของไอคอน */
+.hover-container {
+    position: relative;
+    display: inline-block;
+}
+/* กำหนดระยะของไอคอน IG และ Line*/ 
+#img{
+    margin-right: 10px;
+    margin-bottom: 20px; 
+}
+
+/* ขยายเมื่อเอาเมาส์ไปชี้ตรงไอคอน */
+.zoom {
+    transition: transform 0.3s ease; 
+}
+
+.zoom:hover {
+    transform: scale(1.3); 
+}
+
+/* กำหนดข้อความเมื่อนำเมาส์ไปชี้ที่ไอคอน Facebook */
+.hover-text {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white; 
+    background: #0165E1; 
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #0165E1;
+    box-shadow: 
+        0 0 10px #0165E1,
+        0 0 20px #0165E1,  
+        0 0 40px #0165E1,  
+        0 0 80px #0165E1;
+}
+
+/* กำหนดข้อความเมื่อนำเมาส์ไปชี้ที่ไอคอน Instagram */
+.hover-text2 {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white; 
+    background: #E1306C;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #E1306C;
+    box-shadow: 
+        0 0 10px #E1306C,
+        0 0 20px #E1306C,  
+        0 0 40px #E1306C,  
+        0 0 80px #E1306C;
+}
+
+/* กำหนดข้อความเมื่อนำเมาส์ไปชี้ที่ไอคอน Line */
+.hover-text3 {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+    background: #00b900 ; 
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid #00b900;
+    box-shadow: 
+        0 0 10px #00b900,
+        0 0 20px #00b900,  
+        0 0 40px #00b900,  
+        0 0 80px #00b900;
+}
+
+.hover-container:hover .hover-text{
+    opacity: 1;
+}
+
+.hover-container:hover .hover-text2{
+    opacity: 1;
+}
+
+.hover-container:hover .hover-text3{
+    opacity: 1;
+}
+
+/* กำหนดรูปกิจกรรมและเกียรติบัตรให้อยู่ตรงกลาง */
+.portfolio-item {
+    margin: 20px 0;
+    text-align: center; 
+}
+
+/* จัดเรียงกล่องค้อความอธิบายกิจกรรมและเกียรติบัตร*/
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* กำหนดกล่องข้อความและเนื้อหาของกิจกรรมและเกียรติบัตรเมื่อนำเมาส์ไปชี้*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.image-container:hover .overlay-text {
+    opacity: 1;
+}
+
+footer {
+    text-align: center; 
+    padding: 10px;
+    background: #333; 
+    color: #fff; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+/* สำหรับหน้าจอขนาดใหญ่ (คอมพิวเตอร์) */
+@media (min-width: 1024px) {
+    header .logo {
+        font-size: 1.5rem;
     }
 
     header nav ul {
         flex-direction: row;
-        justify-content: space-around;
+    }
+
+    .main-content {
+        width: 80%;
+    }
+
+    #square {
+        width: 25%;
+    }
+
+    #square2 {
+        width: 75%;
     }
 }
 
-@media (min-width: 1200px) {
-    #port {
-        font-size: 4rem; /* ขยายขนาดฟอนต์สำหรับหน้าจอใหญ่ */
+/* สำหรับหน้าจอขนาดกลาง (แท็บเล็ต) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header .logo {
+        font-size: 1.3rem;
     }
 
-    .portfolio-item img {
-        max-width: 50%; /* ให้ภาพขนาดใหญ่ขึ้นสำหรับจอใหญ่ */
+    header nav ul {
+        flex-direction: row;
+        font-size: 0.9rem;
+    }
+
+    .main-content {
+        width: 90%;
+    }
+
+    #square {
+        width: 30%;
+    }
+
+    #square2 {
+        width: 70%;
     }
 }
 
-#roundsquare,
-#roundsquare2,
-#roundsquare3 {
-    border-radius: 25px;
-    padding: 15px;
-    background: #f4f4f4;
-    display: inline-block; /* ทำให้กล่องปรับขนาดตามเนื้อหา */
-    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่างกล่อง */
-}
+/* สำหรับหน้าจอขนาดเล็ก (โทรศัพท์มือถือ) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
 
-#roundsquare {
-    width: auto;
-}
+    header .logo {
+        font-size: 1.2rem;
+    }
 
-#roundsquare2 {
-    width: auto;
-}
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
 
-#roundsquare3 {
-    width: auto;
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    #square {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #square2 {
+        width: 100%;
+    }
+
+    .portfolio-item2 img {
+        max-width: 150px;
+        margin-left: 0;
+    }
 }
