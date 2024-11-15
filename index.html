@@ -1,107 +1,286 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 
 <head>
-    <title>วิธีการทำข้าวมันไก่</title>
-    <style>
-        p {
-            text-indent: 380px;
-        }
-
-        h3 {
-            text-indent: 380px;
-        }
-
-        h2 {
-            text-indent: 380px;
-        }
-
-        #TIPS {
-            color: orange;
-        }
-
-        #roundCorners {
-            border-radius: 100px;
-            padding: 10px;
-            width: 600px;
-            height: 45px;
-            background: bisque;
-        }
-
-        body {
-            background-color: #FFFFE0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <center>
-        <h1 id="roundCorners">วิธีการทำข้าวมันไก่ วัตถุดิบและวิธีทำ</h1>
-        <p2>ขอบคุณข้อมูลสูตรวิธีจากเว็บ wongnai (นำมาใช้เพื่อทดลองเขียนไม่ได้มีเจตนาคัดลอกแต่อย่างใด)<br>
 
-            <a href="https://www.wongnai.com/recipes/hainanese-chicken-rice">ที่มาข้อมูลสูตรข้าวมันไก่</a>
-    </center>
-    </p2><br>
-    <center>
-        <p3>“ข้าวมันไก่” อาหารจานเดียวเร่งด่วนกินง่ายกินเมื่อไหร่ทั้งอิ่มทั้งฟิน เมนูจานโปรดของใครหลาย ๆ คน
-            ที่จริงทำไม่ยากเลยนะคะ<br>
-            แต่ต้องมีเคล็ดลับในการทำเล็ก ๆ น้อย ๆ ก็จะได้รสชาติที่ออกมาเหมือนไปนั่งกินที่ร้านเลยค่า
-            ถ้าพร้อมแล้วตามมาดูสูตรและวิธีทำข้าวมันไก่กันเลย!</p3>
-            <br><br>
-            <img src="ข้างมันไก่.jpg">
-    </center>
-    <br><br>
-    <h2>วัตถุดิบ</h2>
-    <h3><ins>วัตถุดิบข้าวมันไก่</ins></h3>
-    <p>1. น่องไก่/สะโพกไก่/อกไก่ (ตามชอบ)</p>
-    <p>2. กระเทียม 3 - 4 หัว</p>
-    <p>3. รากผักชี 6 ราก</p>
-    <p>4. ขิงแก่หั่นเป็นแผ่นบาง 6 แผ่น</p>
-    <p>5. พริกไทย 30 เม็ด</p>
-    <p>6. เกลือ 1 ½ ช้อนโต๊ะ</p>
-    <p>7. น้ำตาลกรวด ½ ช้อนโต๊ะ</p>
-    <p>8. ข้าวสารดิบ 2 ถ้วยตวง</p>
-    <p>9. ซีอิ๊วขาว 3 ช้อนโต๊ะ</p>
-    <p>10. น้ำมันพืช ½ ช้อนโต๊ะ</p>
-    <p>11. แตงกวา</p>
-    <p>12. ผักชี</p>
-    <br>
-    <h3><ins>วัตถุดิบน้ำจิ้มข้าวมันไก่</ins></h3>
-    <p>1. เต้าเจี้ยว 6 ช้อนโต๊ะ</p>
-    <p>2. ขิงแก่สับ 3 ช้อนโต๊ะ</p>
-    <p>3. พริกขี้หนูหั่น 2 ช้อนโต๊ะ</p>
-    <p>4. ซีอิ๊วหวาน 1 ช้อนโต๊ะ</p>
-    <p>5. มะนาว 1 ช้อนโต๊ะ</p>
-    <p>6. น้ำตาลทราย 1 ช้อนโต๊ะ</p>
-    <p>7. น้ำต้มสุก 1 ช้อนโต๊ะ </p>
-    <br>
-    <h3><ins>วัตถุดิบน้ำซุปฟัก</ins></h3>
-    <p>1. ฟักหั่น ½ หัว</p>
-    <p>2. น้ำต้มไก่ 500 มิลลิลิตร</p>
-    <p>3. ซีอิ๊วขาว 1 ช้อนโต๊ะ</p>
-    <p>4. เกลือ ½ ช้อนโต๊ะ</p>
-    <br>
-    <h2>วิธีทำข้าวมันไก่</h2>
-    <h2>STEP 1 : ต้มไก่ + น้ำซุปฟัก</h2>
+    <header>
+        <div class="logo">&nbsp;&nbsp;สุวิจักขณ์ วงค์น้อย</div>
+        <nav>
+            <ul>
+                <li><a href="#about">ประวัติ</a></li>
+                <li><a href="#portfolio">ผลงาน</a></li>
+                <li><a href="#certificate">เกียรติบัตร</a></li>
 
-    <p>- ต้มน้ำซุปต้มไก่ โดยใส่ รากผักชี กระเทียม พริกไทย ขิง น้ำตาลกรวด ซีอิ๊วขาว เกลือ เคี่ยวประมาณ 15 นาที
-        นำไก่ลงไปต้มต่อจนไก่สุก </p>
-    <p>&nbsp;&nbsp;ใช้เวลาประมาณ 30 นาที</p>
-    <p>- นำไก่ที่สุกแล้วไปน็อกในน้ำผสมน้ำแข็ง จนไก่เย็น ใช้เวลาประมาณ 5 - 10 นาที แล้วนำไก่ขึ้นพักให้สะเด็ดน้ำ
-        ทาด้วยน้ำมันพืชบาง ๆ ให้ทั่วชิ้นไก่ พักไว้</p>
-    <p>- น้ำซุปที่ต้มไก่ให้ช้อนมันออกจากน้ำซุป เอาออกจนน้ำซุปใส ใส่ฟักที่หั่นแล้วลงไปต้ม ปรุงรสด้วยซีอิ๊ว และเกลือ
-        ต้มจนฟักสุก</p>
-    <p id="TIPS">TIPS: การต้มไก่ควรใช้ไฟค่อนข้างอ่อน ต้มไปเรื่อย ๆ จะได้น้ำซุปใสเนื้อไก่สวย</p>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>STEP 2 : ทำข้าวมันไก่</h2>
-    <p>- หุงข้าวมันไก่ โดยเจียวกระเทียมกับขิงแก่บุบจนหอม ใส่ข้าวสารดิบลงไป ผัดพอเข้ากัน ปรุงรสด้วยเกลือ
-        น้ำมันไก่ที่ช้อนไว้ ผัดอีกรอบ</p>
-    <p>แล้วเทใส่หม้อหุงข้าว ใส่น้ำซุปต้มไก่ลงไป หุงจนข้าวสุก</p><br>
-    <h2>วิธีทำน้ำจิ้มข้าวมันไก่</h2>
-    <p>- ทำน้ำจิ้มโดยใส่ขิงซอย พริกขี้หนูหั่น เต้าเจี้ยว ซีอิ๊วดำหวาน มะนาว น้ำตาลทราย น้ำต้มสุก คนให้เข้ากัน
-        กินคู่ข้าวมันไก่</p>
-<center><img src="ข้าวมันไก่ 2.webp"></center>
-    
+
+
+    <section class="banner">
+        <h1 class="fade-in-text" id="port">PORTFOLIO</h1>
+    </section>
+
+    <section id="about" class="main-content">
+        <h2 id="roundsquare">ประวัติ (Profile)</h2>
+
+        <div class="container">
+
+            <div id="square">
+                <p>
+                    <b>ชื่อ</b> : สุวิจักขณ์ วงค์น้อย<br>
+                    <b>ชื่อเล่น</b> : คิง<br>
+                    <b>เชื้อชาติ</b> : ไทย<br>
+                    <b>สัญชาติ</b> : ไทย<br>
+                    <b>ศาสนา</b> : พุทธ<br>
+                    <b>แผนการเรียน</b> : ศิลป์-คำนวณ<br>
+                </p>
+                <h3>ทักษะ</h3>
+                <ul>
+                    <li>การสื่อสารภาษาอังกฤษ</li>
+                    <li>การใช้โปรแกรมคอมพิวเตอร์</li>
+                    <li>การรับฟังความคิดเห็นผู้อื่น</li>
+                    <li>การทำงานร่วมกับผู้อื่นได้ดี</li>
+                    <li>บาสเกตบอล</li>
+                </ul>
+            </div>
+
+            <div class="portfolio-item2">
+                <img src="7.jpg" alt="my self">
+                <p>
+                <div class="hover-container">
+                    <a href="https://www.facebook.com/profile.php?id=100009132927957">
+                        <img src="facebook-logo.png" width="70px" height="auto" class="zoom">
+                        <p class="hover-text">Facebook</p>
+                </div>
+                <div class="hover-container">
+                    <a href="https://www.instagram.com/king.juayy?igsh=MWF3NW9xbGt0OXVyMw==">
+                        <img id="img" src="IGlogo.jfif" width="50px" height="auto" class="zoom">
+                        <p class="hover-text2">Instagram</p>
+                </div>
+                <div class="hover-container">
+                    <a href="https://line.me/ti/p/M67C3-fyEs">
+                        <img id="img" src="linelogo.png" width="50px" height="auto" class="zoom">
+                        <p class="hover-text3">Line</p>
+                </div>
+
+                </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="main-content">
+        <h2 id="roundsquare2">ผลงาน (Activities)</h2>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="เยาวชน.jpg" alt="ตัวแทนนักกีฬาจังหวัดนครศรีธรรมราช" class="image">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <b>ตัวแทนนักกีฬาจังหวัดนครศรีธรรมราช</b><br>ได้รับคัดเลือกเป็นตัวแทนนักกีฬาจังหวัดนครศรีธรรมราช
+                        แข่งในรายการ "กีฬาเยาวชนแห่งชาติ ครั้งที่39"
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="UTCC.jpg" alt="UTCC Championship 2024" loading="lazy" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>UTCC Championship 2024</b><br>
+                        ได้รับรางวัลรองชนะเลิศอันดับ 2 ในรายการ UTCC Championship 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="NST.jpg" alt="NST Basketball Cup" loading="lazy" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>NST Basketball Cup</b><br>
+                        ได้รับรางวัลรองชนะเลิศอันดับ 2 ในรายการ NST Basketball Cup
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="Trang.jpg" alt="Trang Streetball Championship 2024" loading="lazy" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>Trang Streetball Championship 2024</b><br>
+                        ได้รับรางวัลรองชนะเลิศอันดับ 1 ในรายการ Trang Streetball Championship 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="Trang2.jpg" alt="Trang Summer Cup" loading="lazy" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>Trang Summer Cup</b><br>
+                        ได้รับรางวัลรองชนะเลิศอันดับ 2 ในรายการ Trang Summer Cup
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="Thongsong.jpg" alt="ทุ่งสง บาสเกตบอล 2024" loading="lazy" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>ทุ่งสง บาสเกตบอล 2024</b><br>
+                        ได้รับรางวัลรองชนะเลิศอันดับ 2 ในรายการ ทุ่งสง บาสเกตบอล 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="Surat.jpg" alt="รายการ 3x3 โรงเรียนสุราษฎร์พิทยา" loading="lazy" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>รายการ 3x3 โรงเรียนสุราษฎร์พิทยา</b><br>
+                        ได้รับรางวัลรองชนะเลิศอันดับ 1 ในรายการ 3x3 โรงเรียนสุราษฎร์พิทยา
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificate" class="main-content">
+        <h2 id="roundsquare3">เกียรติบัตร (Certificate)</h2>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="คนดี.jpg" alt="คนดีสตรีทุ่งสง" loading="lazy" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>คนดีสตรีทุ่งสง</b><br>
+                        ได้รับเลือกเป็น คนดี สตรีทุ่งสง ระดับชั้นมัธยมศึกษาปีที่ 5
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="เกรดดี ม.5.jpg" alt="นักเรียนผู้มีผลการเรียนดีเด่น" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>นักเรียนผู้มีผลการเรียนดีเด่น</b><br>
+                        เป็นนักเรียนผู้มีผลการเรียนดีเด่น ระดับมัธยมศึกษาปีที่ 5
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="เกรดดี ม.4.jpg" alt="นักเรียนผู้มีผลการเรียนดีเด่น" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>นักเรียนผู้มีผลการเรียนดีเด่น</b><br>
+                        เป็นนักเรียนผู้มีผลการเรียนดีเด่น ระดับมัธยมศึกษาปีที่ 4
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="BEE 16.jpg" alt="Spelling BEE" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>เข้าร่วม Spelling BEE</b><br>
+                        เข้าร่วมกิจกรรม Spelling BEE ของโรงเรียนสตรีทุ่งสง
+                        ในวันที่ 16 สิงหาคม พ.ศ.2566
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="BEE 26.jpg" alt="Spelling BEE" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>เข้าร่วม Spelling BEE</b><br>
+                        เข้าร่วมกิจกรรม Spelling BEE ของโรงเรียนสตรีทุ่งสง
+                        ในวันที่ 22 กรกฎาคม พ.ศ.2565
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="UTCC cer.jpg" alt="UTCC Championship 2024" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>UTCC Championship 2024</b><br>
+                        รองชนะเลิศอันดับ 2
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="Trang cer.jpg" alt="Trang Streetball Championship 2024" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>Trang Streetball Championship</b><br>
+                        รองชนะเลิศอันดับ 1
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="NST cer.jpg" alt="สพม. นครศรีธรรมราช เกมส์" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>สพม. นครศรีธรรมราช เกมส์</b><br>
+                        รองชนะเลิศอันดับ 2
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="Thongsong cer.jpg" alt="ทุ่งสง บาสเกตบอล 2024" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>ทุ่งสง บาสเกตบอล 2024</b><br>
+                        ได้รับรางวัลรองชนะเลิศอันดับ 2 ในรายการ ทุ่งสง บาสเกตบอล 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="portfolio-item" id="square2">
+            <div class="image-container">
+                <img src="สุราษพิท cer.jpg" alt="รายการ 3x3 โรงเรียนสุราษฎร์พิทยา" class="image">
+                <div class="overlay">
+                    <div class="overlay-text"><b>รายการ 3x3 โรงเรียนสุราษฎร์พิทยา</b><br>
+                        รองชนะเลิศอันดับ 1
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <footer>
+    </footer>
 </body>
 
 </html>
